@@ -13,12 +13,24 @@ public class tutorialScript : MonoBehaviour
     void Start()
     {
         story = new Story(inkJSON.text);
-        Debug.Log(story.Continue());
+        Debug.Log(LoadStoryChunk()  );
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    string LoadStoryChunk()
+    {
+        string text = "";
+
+        if (story.canContinue)
+        {
+            text = story.ContinueMaximally();
+        }
+
+        return text;
     }
 }
