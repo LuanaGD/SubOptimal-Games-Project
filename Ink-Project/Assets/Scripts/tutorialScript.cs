@@ -14,6 +14,8 @@ public class tutorialScript : MonoBehaviour
     {
         story = new Story(inkJSON.text);
         Debug.Log(LoadStoryChunk()  );
+
+        Debug.Log(story.currentChoices);
     }
 
     // Update is called once per frame
