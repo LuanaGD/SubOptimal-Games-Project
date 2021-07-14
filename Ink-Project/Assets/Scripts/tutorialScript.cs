@@ -43,7 +43,7 @@ public class tutorialScript : MonoBehaviour
             //create a child of type text for the choice
             Text choiceText = buttonPrefab.GetComponentInChildren<Text>();
             choiceText.text = choice.text;
-            choiceButton.transform.SetParent(this.transform, false);
+            choiceButton.transform.SetParent(this.transform, true);
 
             //make button react to click and sends method as a parameter
             choiceButton.onClick.AddListener(delegate
