@@ -5,7 +5,7 @@ using Ink.Runtime;
 using UnityEngine.UI;
 
 
-public class tutorialScript : MonoBehaviour
+public class StoryScript : MonoBehaviour
 {
 
     public TextAsset inkJSON;
@@ -13,6 +13,10 @@ public class tutorialScript : MonoBehaviour
 
     public Text textPrefab;
     public Button buttonPrefab;
+
+    [SerializeField]
+    private int buttonOffset;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,27 +35,55 @@ public class tutorialScript : MonoBehaviour
 
         //create Text UI
         Text storyText = Instantiate(textPrefab) as Text;
-        //load story
-        storyText.text = LoadStoryChunk();
+
+        //allows working with tags
+        string text = LoadStoryChunk();
+
+        //load story (getting value from LoadStoryChunk)
+        storyText.text = text;
+
         //make it so the canvas doesn't change
         storyText.transform.SetParent(this.transform, false);
 
+        //ShowChoices();
         //load next set of choices
         foreach (Choice choice in story.currentChoices)
         {
-            Button choiceButton = Instantiate(buttonPrefab) as Button;
+            Button choiceButton = Instantiate(buttonPrefab, buttonPrefab.transform.position, buttonPrefab.transform.rotation) as Button;
             //create a child of type text for the choice
             Text choiceText = buttonPrefab.GetComponentInChildren<Text>();
             choiceText.text = choice.text;
-            choiceButton.transform.SetParent(this.transform, true);
+            choiceButton.transform.SetParent(this.transform, false);
 
             //make button react to click and sends method as a parameter
             choiceButton.onClick.AddListener(delegate
             {
                 chooseStoryChoice(choice);
             });
+
         }
     }
+
+    /*IEnumerator ShowChoices()
+    {
+        List<Choice> _choicesToMake = story.currentChoices;
+
+        for (int i = 0; i < _choicesToMake.Count; i++)
+        {
+            Button temp = Instantiate(buttonPrefab, buttonPrefab.transform.position, buttonPrefab.transform.rotation);
+            temp.transform.GetChild(0).GetComponent<Text>().text = _choicesToMake[i].text;
+            temp.AddComponent<Selectable>();
+            temp.GetComponent<Selectable>().element = _choices[i];
+            temp.GetComponent<Button>().onClick.AddListener(() => { temp.GetComponent<Selectable>().Decide(); });
+        }
+
+        optionPanel.SetActive(true);
+
+        yield return new WaitUntil(() => { return choiceSelected != null; });
+
+        AdvanceFromDecision();
+
+    }*/
 
     void eraseUI()
     {
@@ -61,7 +93,7 @@ public class tutorialScript : MonoBehaviour
         }
     }
 
-    void chooseStoryChoice(Choice choice)
+    void chooseStoryChoice(Choice choice) //advances the story after a choice
     {
         story.ChooseChoiceIndex(choice.index);
         refreshUI();
