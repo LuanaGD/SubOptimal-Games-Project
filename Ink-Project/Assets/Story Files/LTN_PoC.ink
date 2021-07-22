@@ -28,7 +28,7 @@ Non, impossible.
 
 Les indices et rumeurs sont trop nombreux.
 
-*[Continuer]->Debut2
+* [Continuer]->Debut2
 
 === Debut2 ===
 Vous tendez l'oreille, cherchant la rivière. Vous savez que si vous la remontez, vous pourrez retrouver le chemin du village. Plutôt rentrer bredouille et abandonner maintenant plutôt que de mourir dévoré par un des autres prédateurs qui hantent les bois. Cette forêt est vaste après tout. Elle abrite trop de crocs à nourrir et ceux de la Bête ne sont sans doute pas les seuls qu'on doit craindre. 
@@ -36,13 +36,13 @@ Vous tendez l'oreille, cherchant la rivière. Vous savez que si vous la remontez
 Après plusieurs dizaines de minutes de marche, vous apercevez enfin la rivière. Cette vision vous redonne courage, estompe la fatigue et maintenant vous vous hâtez. Enfin, vous pouvez vous désaltérer et vous reposer un instant, dans un territoire plus ou moins familier. 
 Lorsque vous levez les yeux, vous voyez qu'il fait nuit noire. Les étoiles et la Lune sont absentes au rendez-vous... Vous êtes fatigué. Peut être pourriez vous faire un sieste, ou vous allonger un instant et contempler les raisons qui vous poussent à rechercher cette chose.
 
-*[Continuer]->Debut3
+    * *[Continuer]->Debut3
 
 == Debut3 ==
 <i>"Vous avez l'air perdu. Est-ce que vous allez bien?"</i> #Beast
 
 La voix vous sort de votre contemplation, et vous vous retournez en sursautant. Vous voyez une forme drapée d'ombres, qui vous fixe de ses yeux lumineux. Beaucoup trop d'yeux à votre goût. Ce n'est que maintenant qu'Elle se manifeste ? Sûrement pour profiter de vous plus facilement. Après tout, vous êtes épuisé physiquement et moralement plein d'incertitudes. Il ne faut rien laisser paraître à la vicieuse créature que le sort malheureux vous force à rencontrer.
-*"Ce n'est que maintenant que vous vous manifestez ?" 
+* * *"Ce n'est que maintenant que vous vous manifestez ?" 
 ->Rencontre1
 
 
@@ -53,7 +53,7 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
 <i>"Vous me cherchiez et je vous ai trouvé.</i> #Beast
 <i>Je sais que vous ne me cherchiez pas réellement, mais que vous cherchez ce que seule moi peut vous apporter.</i> #Beast
 <i> Racontez moi votre histoire..."</i> #Beast
-*[Refuser de donner des informations à la Bête] ->Rencontre1_A
+* * * *[Refuser de donner des informations à la Bête] ->Rencontre1_A
 
     === Rencontre1_A ===
     
@@ -69,7 +69,7 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
     Vous acquiescez lentement. Les yeux de la Bête semblent... sourire ? Cette image n'est pas des plus rassurantes. Vous voyez un... bras couvert d'ombres sortir de cette masse. Au bout des griffes, pend une lanterne. Elle vous la tend.
     <i>"Prends cette Lanterne. Elle te permettra de ne pas te perdre tant que tu seras à mon service... Eclaire donc les alentours, tu comprendras."</i>#Beast
     
-    *[Prendre la Lanterne]
+    * * *[Prendre la Lanterne]
     
 
 
@@ -77,8 +77,8 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
     
     = Lantern_Choices 
     
-        *[Eclairer la Bête]->LanterneBeast
-        *[Eclairer les environs]->LanterneEnvirons
+        * * * *[Eclairer la Bête]->LanterneBeast
+        * * * *[Eclairer les environs]->LanterneEnvirons
     
 
     == LanterneBeast
@@ -91,7 +91,7 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
     <b>Luana Tran Nguyen</b>
 
     Vous couvrez la lanterne et l'éloignez de la Bête. Vous avez satisfait votre curiosité.
-    *[Continuer]->LanterneEnvirons
+    * * *[Continuer]->LanterneEnvirons
     
     ->DONE
     
@@ -101,7 +101,7 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
     Vous pointez la lanterne vers les arbres et la rivière. Soudain, la forêt semble se tordre et la lumière révèle des phrases et des mots qui s'enlacent et forment les arbres, le sol et tout ce qui vous entoure.
     <i>"Cette lanterne révèle les fondations de cette forêt. Qu'en penses tu?"</i> #Beast
     //corriger la phrase au-dessus
-    *[Lever la lanterne]->Lanterne_FirstUse
+    * * *[Lever la lanterne]->Lanterne_FirstUse
     
     = Lanterne_FirstUse
     //micro cinématique sans UI qui montre la forêt sous un autre point de vue.
@@ -109,7 +109,7 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
     (Version Texte Inky)
     Vous vous éloignez de la Bête, qui reste où elle est, vous observant avec ses dizaine d'yeux. Vous pointez la lanterne vers les arbres et la rivière. Soudain, la forêt semble se tordre et la lumière révèle des phrases et des mots qui s'enlacent et forment les arbres, le sol et tout ce qui vous entoure.
     <i>"Cette lanterne révèle les fondations de cette forêt. Qu'en penses tu?"</i> #Beast
-    *[Baisser la Lanterne]
+    * * * *[Baisser la Lanterne]
     
     La forêt semble de nouveau normale. La Bête pointe une griffe vers la zone que vous avez éclairé et vous chuchote à l'oreille. 
     <i>"Avec les bons codes, il est possible de faire de cet endroit un terrain de jeu. Se téléporter, changer l'aspect du décor voire même changer le destin. J'ai besoin de quelqu'un qui puisse maîtriser ces codes afin d'accomplir certaines tâches."</i> #Beast
@@ -118,7 +118,7 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
     //(Amener l'influence sur la forêt d'une meilleure manière; gradation?; plus tard?; énoncer des structures?)
     
     = Lanterne_FirstUse_Suite
-    *[Hocher la tête]
+    * * * *[Hocher la tête]
     La Bête ne dit rien pendant un instant, puis vous l'entendez reculer.
     <i>"Avance un peu, jusqu'à ce que tu trouves un endroit qui te semble impossible à traverser. Observe un peu les environs, histoire de te familiariser avec la Lanterne... Et tente de me retrouver."</i> #Beast
     
@@ -128,12 +128,12 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
 ->DONE
 
 ==== Deplacement_FirstUses ====
-*[Continuer]->Deplacement_FirstUses_Begin
+* [Continuer]->Deplacement_FirstUses_Begin
 
 === Deplacement_FirstUses_Begin ===
 Voilà que vous progressez dans la forêt, le territoire de la Bête, maintenant à sa recherche. Sans Elle, impossible d'obtenir ce pour quoi vous êtes venu la voir. Même si elle vous poussera probablement à faire des choses horribles pour elle. 
 Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt ne fut pas aisé. Certains sentiers et certains arbres semblaient disparaître subitement, vous laissant face à des murs de brume impénétrables...
-*[Lever la Lanterne]
+* *[Lever la Lanterne]
 
     //==Lantern_Raise_First
     (Texte version inky: Display knot name and syntax + Direct name and syntax)
@@ -141,14 +141,14 @@ Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt
  Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt ne fut pas aisé. Certaines portions de l'endroit semblaient disparaître subitement, vous laissant face à des murs de brume impénétrables... ->Done_FirstUses_LanternChoice1
 
     === Done_FirstUses_LanternChoice1 ===    
-*[Baisser la Lanterne]->Done_FirstUses_BeforeLantern
-*[Inspecter le texte de plus près]->FirstUse_Done
+* * *[Baisser la Lanterne]->Done_FirstUses_BeforeLantern
+* * *[Inspecter le texte de plus près]->FirstUse_Done
 
 
     === Done_FirstUses_BeforeLantern ===
     Voilà que vous progressez dans la forêt, le territoire de la Bête, maintenant à sa recherche. Sans elle, impossible d'obtenir ce pour quoi vous êtes venu la voir. Même si elle vous poussera probablement à faire des choses horribles pour elle. 
 Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt ne fut pas aisé. Certaines portions de l'endroit semblaient disparaître subitement, vous laissant face à des murs de brume impénétrables...
-    *[Lever la Lanterne]
+    * * *[Lever la Lanterne]
 
     //==Lantern_Raise_First
     //(Texte version inky)
@@ -158,7 +158,7 @@ Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt
     === FirstUse_Done ===
     (Texte inky)
     /*<pre>*/A travers les mots, vous arrivez à apercevoir des symboles étranges. Ils ne constituent pas de mots, mais pourtant sont là. D'une certaine manière, ils font partie de la forêt. /*</pre>*/
-    *[Baisser la Lanterne]
+    * * *[Baisser la Lanterne]
     
     //Texte Inky
     Votre estomac grogne, et vous avez très envie de sortir de cet endroit. Vous pensiez pouvoir trouver la Bête en moins de deux jours, mais elle vous a fait macérer... Et vous avez vraiment envie d'un petit-déjeuner.
@@ -200,7 +200,7 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'Elle a un fort cont
 
     === Tuto_destination ===
     La Bête semble sourire, encore. Elle pointe votre Lanterne sans dire un mot.
-    *[Lever la lanterne]->Destination_Tuto
+    * *[Lever la lanterne]->Destination_Tuto
     
     
     == Destination_Tuto ==
@@ -208,7 +208,7 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'Elle a un fort cont
         //(===First_Jump)
     <i>"As tu remarqué que ces symboles sont toujours au début des sections que tu inspectes? Ce sont les... Destinations. Ajouter un ou plusieurs "=" avant une ligne lui donne un nom et crée un nouvel endroit où te rendre."</i> #Beast
     
-    *"Qu'est-ce que ces "- >" à la fin des morceaux de texte?" ->Tuto_direction_if_destination
+    * * *"Qu'est-ce que ces "- >" à la fin des morceaux de texte?" ->Tuto_direction_if_destination
     
     //*[Lever la lanterne]->First_Jump_Explanation
     //*[Baisser la Lanterne]->First_Jump_Explanation_Suite 
@@ -229,7 +229,7 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'Elle a un fort cont
     == Tuto_Direction2 ==
     <i>"Ce symbole est une direction. Lorsqu'un chemin, un élément, un morceau de texte prend fin, il redirige vers un autre endroit. Une... Destination en quelque sorte."</i> #Beast
     
-    *"Qu'est ces symboles = avant certains morceaux de texte?" ->Tuto_destination_if_direction
+    * * *"Qu'est ces symboles = avant certains morceaux de texte?" ->Tuto_destination_if_direction
         
 
     === Tuto_direction_if_destination ===
@@ -251,7 +251,7 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'Elle a un fort cont
     
     <i>"Voici ce que tu peux faire en utilisant ces symboles et tes mots. Tu en auras besoin pour la première tâche que je vais te confier."</i> #Beast
     
-    *[Acquiescer]
+    * *[Acquiescer]
     
     <i>"Rapporte moi Snowball, le cochon de foire. Il commence à être bien gras et j'ai des ... projets pour lui. Fais comme tu veux, mais rapporte moi ce cochon."</i> #Beast
     

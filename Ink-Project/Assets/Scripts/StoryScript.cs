@@ -45,7 +45,21 @@ public class StoryScript : MonoBehaviour
         //make it so the canvas doesn't change
         storyText.transform.SetParent(this.transform, false);
 
-        //ShowChoices();
+        if (story.currentChoices.Count > 0)
+        {
+            for (int i = 0; i < story.currentChoices.Count; i++)
+            {
+                Choice choice = story.currentChoices[i];
+                Button button = CreateChoiceView(choice.text.Trim());
+                // Tell the button what to do when we press it
+                button.onClick.AddListener(delegate {
+                    OnClickChoiceButton(choice);
+                });
+            }
+        }
+
+
+        /*ShowChoices();
         //load next set of choices
         foreach (Choice choice in story.currentChoices)
         {
@@ -61,7 +75,7 @@ public class StoryScript : MonoBehaviour
                 chooseStoryChoice(choice);
             });
 
-        }
+        }*/
     }
 
     /*IEnumerator ShowChoices()
