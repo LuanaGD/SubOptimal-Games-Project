@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System;
 using Ink.Runtime;
+using System.Collections.Generic;
 
 // This is a super bare bones example of how to play and display a ink story in Unity.
 public class BasicInkExample : MonoBehaviour {
@@ -33,6 +34,17 @@ public class BasicInkExample : MonoBehaviour {
 			string text = story.Continue ();
 			// This removes any white space from the text.
 			text = text.Trim();
+
+			//creates Tag list and shows tags with text
+			List<string>tags = story.currentTags;
+
+
+
+			if (tags.Count > 0)
+			{
+				text = tags[0] + text;
+			}
+
 			// Display the text on screen!
 			CreateContentView(text);
 		}

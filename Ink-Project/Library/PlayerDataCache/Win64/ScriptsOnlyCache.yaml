@@ -1,7 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - tutorialScript
+    - StoryScript
     InkEditor.dll:
     - Ink.UnityIntegration.InkCompiler
     - Ink.UnityIntegration.InkLibrary
@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -252,10 +253,10 @@ ScriptsOnlyBuild:
     className: CinemachinePixelPerfect
   - hash:
       serializedVersion: 2
-      Hash: fa388b251574bc4a345b47e644d64c6a
+      Hash: 14da970931fa7af2132bf72918c7872d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: tutorialScript
+    className: StoryScript
   - hash:
       serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
@@ -853,4 +854,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Scene.unity
-  playerPath: C:/Users/lmtn/Documents/SubOptimal Games Project/Ink-Project.exe
+  playerPath: C:/Users/lmtn/Documents/Ink-Build/Second Build/Ink-Project.exe
