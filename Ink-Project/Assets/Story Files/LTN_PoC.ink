@@ -2,10 +2,6 @@
 
 
 //Insérer les Tags aussi
-//#Beast
-
-
-
 
 
 // Début de l'histoire dans l'éditeur
@@ -29,6 +25,28 @@ Non, impossible.
 Les indices et rumeurs sont trop nombreux.
 
 * [Continuer]->Debut2
+* [Lanterne Test]->Debut_Lanterne
+
+==== Debut_Lanterne
+
+Cela fait deux jours.
+
+Deux jours que vous errez dans cette forêt.
+
+Normalement, la Bête se présente à ceux qui la cherchent.
+
+Celle-ci refuse-t-elle de se présenter à vous?
+
+Ou bien n'est-ce qu'un conte de grand-mère, fait pour effrayer les enfants?
+
+Non, impossible.
+
+Les indices et rumeurs sont trop nombreux.
+
+#*[Continuer]->Debut2
+
+
+*[Continuer]->Debut2
 
 === Debut2 ===
 Vous tendez l'oreille, cherchant la rivière. Vous savez que si vous la remontez, vous pourrez retrouver le chemin du village. Plutôt rentrer bredouille et abandonner maintenant plutôt que de mourir dévoré par un des autres prédateurs qui hantent les bois. Cette forêt est vaste après tout. Elle abrite trop de crocs à nourrir et ceux de la Bête ne sont sans doute pas les seuls qu'on doit craindre. 
@@ -39,7 +57,7 @@ Lorsque vous levez les yeux, vous voyez qu'il fait nuit noire. Les étoiles et l
     * *[Continuer]->Debut3
 
 == Debut3 ==
-<i>"Vous avez l'air perdu. Est-ce que vous allez bien?"</i> #Beast
+<i>"Vous avez l'air perdu. Est-ce que vous allez bien?"</i> 
 
 La voix vous sort de votre contemplation, et vous vous retournez en sursautant. Vous voyez une forme drapée d'ombres, qui vous fixe de ses yeux lumineux. Beaucoup trop d'yeux à votre goût. Ce n'est que maintenant qu'Elle se manifeste ? Sûrement pour profiter de vous plus facilement. Après tout, vous êtes épuisé physiquement et moralement plein d'incertitudes. Il ne faut rien laisser paraître à la vicieuse créature que le sort malheureux vous force à rencontrer.
 * * *"Ce n'est que maintenant que vous vous manifestez ?" 
@@ -50,9 +68,9 @@ La voix vous sort de votre contemplation, et vous vous retournez en sursautant. 
 
 L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent aucune réaction, ni amusée, ni surprise, à votre provocation... Il va sans dire que c'est la pire des réactions possibles : celle d'un prédateur froid. 
 
-<i>"Vous me cherchiez et je vous ai trouvé.</i> #Beast
-<i>Je sais que vous ne me cherchiez pas réellement, mais que vous cherchez ce que seule moi peut vous apporter.</i> #Beast
-<i> Racontez moi votre histoire..."</i> #Beast
+<i>"Vous me cherchiez et je vous ai trouvé.</i> 
+<i>Je sais que vous ne me cherchiez pas réellement, mais que vous cherchez ce que seule moi peut vous apporter.</i> 
+<i> Racontez moi votre histoire..."</i> 
 * * * *[Refuser de donner des informations à la Bête] ->Rencontre1_A
 
     === Rencontre1_A ===
@@ -61,9 +79,22 @@ L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent auc
     
     Votre voix tremble légèrement. Toutefois vous ne voulez pas montrer de faiblesse face à la Bête. Vous savez ce qui vous attend et vous voulez en finir rapidement. Plus vite vous ferez les basses besognes qu'elle vous demandera de faire, plus vite vous pourrez repartir d'ici avec ce que vous étiez venu chercher au départ.
     
-    <i>"Je suppose que vous savez ce que cela implique, n'est ce pas ? De vous mettre à mon service en guise de paiement..."</i> #Beast
+    <i>"Je suppose que vous savez ce que cela implique, n'est ce pas ? De vous mettre à mon service en guise de paiement..."</i> 
     
         *[Accepter]->Rencontre1_A_Suite
+        *[Lanterne Test]->Rencontre1_A_Suite_Lanterne
+        
+        == Rencontre1_A_Suite_Lanterne ==
+        
+        "Si vous savez ce que je recherche, apportez le moi."
+    
+    Votre voix tremble légèrement. Toutefois vous ne voulez pas montrer de faiblesse face à la Bête. Vous savez ce qui vous attend et vous voulez en finir rapidement. Plus vite vous ferez les basses besognes qu'elle vous demandera de faire, plus vite vous pourrez repartir d'ici avec ce que vous étiez venu chercher au départ.
+    
+    #<i>"Je suppose que vous savez ce que cela implique, n'est ce pas ? De vous mettre à mon service en guise de paiement..."</i> 
+    
+    #*[Continuer]->Rencontre1_A_Suite
+    
+    *[Continuer]->Rencontre1_A_Suite
     
     == Rencontre1_A_Suite ==
     Vous acquiescez lentement. Les yeux de la Bête semblent... sourire ? Cette image n'est pas des plus rassurantes. Vous voyez un... bras couvert d'ombres sortir de cette masse. Au bout des griffes, pend une lanterne. Elle vous la tend.
