@@ -45,7 +45,7 @@ public class StoryScript : MonoBehaviour
         //make it so the canvas doesn't change
         storyText.transform.SetParent(this.transform, false);
 
-        if (story.currentChoices.Count > 0)
+        /*if (story.currentChoices.Count > 0)
         {
             for (int i = 0; i < story.currentChoices.Count; i++)
             {
@@ -56,7 +56,7 @@ public class StoryScript : MonoBehaviour
                     OnClickChoiceButton(choice);
                 });
             }
-        }
+        }*/
 
 
         /*ShowChoices();

@@ -247,7 +247,7 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'Elle a un fort cont
     
     === Conclusion_Gen ===
     
-    La Bête met sa "main" sur la vôtre, vous faisant baisser la Lanterne. Ses griffes sont longues, et sa "peau" est visqueuse, un peu comme de l'encre en train de sécher. Elle inscrit les symboles dans l'air, suivis de plusieurs mots. Et d'un coup, vous vous retrouvez en haut d'une falaise, au-dessus d'un village encore endormi.
+    La Bête met sa "main" sur la vôtre, vous faisant baisser la Lanterne. Ses griffes sont longues, et sa "peau" est visqueuse, un peu comme de l'encre en train de sécher. Elle inscrit les symboles dans l'air, suivis de plusieurs mots. Et d'un coup, vous vous retrouvez en haut d'une falaise, au-dessus d'une ferme encore endormie.
     
     <i>"Voici ce que tu peux faire en utilisant ces symboles et tes mots. Tu en auras besoin pour la première tâche que je vais te confier."</i> #Beast
     
@@ -260,11 +260,190 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'Elle a un fort cont
     <i>"Pense à utiliser ce que tu viens d'apprendre..."</i> #Beast
     
 
-->DONE
+->Descente_Falaise_Debut
 
+==== Descente_Falaise_Debut
+Vous êtes de nouveau seul, sur cette falaise surplombant les terres de la ferme. L'aube se lève doucement. Vous jetez un oeil aux alentours. Vous pouvez descendre, mais le chemin semble ardu à emprunter. Quand à tenter de se téléporter... Mais vous pouvez peut être essayer.
+    * [Tenter de se téléporter]->Descente_Falaise_Teleportation
+    * [Descendre doucement en faisant le tour]->Descente_Falaise_Marche
+    
+    === Descente_Falaise_Teleportation
+    
+    //Activation des choix que si la lanterne est levée?
+    Vous regardez votre lanterne, et regardez aux alentours. Il serait peut être temps de la lever et d'essayer d'imiter la Bête pour vous déplacer.
+    
+    * * [Vous prenez la ferme comme destination.] ->Descente_Falaise_Teleportation_Destination
+    * * [Vous décidez de descendre tout droit, afin d'arriver en bas de la falaise.]->Descente_Falaise_Teleportation_EnBas
+    
+        ==Descente_Falaise_Teleportation_EnBas
+        
+        Votre route est toute tracée. Vous savez qu'il faut aller en bas, et que la Forêt ne pourra se plier qu'à un ordre direct. 
+        Du bout de votre doigt, vous semblez toucher la fabrique de la réalité, et inscrivez simplement la direction dans laquelle vous voulez vous rendre, c'est à dire, en bas. Avec la flèche avant la direction, afin de rendre votre décision effective...
+        
+        WHOOSH!
+        
+        Vous êtes comme poussé à travers une mer d'encre, avant de vous retrouver à tituber, lanterne à la main, en bas de la falaise. Votre première expérience de téléportation est bien surprenante, mais celle-ci fut un succès! Vous n'avez plus qu'à vous rendre à la ferme, qui se trouve à deux pas d'ici.
+    
+        * * * [Continuer]->Descente_Standard_Meet
+    
+        ==Descente_Falaise_Teleportation_Destination
+        
+        //activation choix avec lanterne levée
+        Votre destination devrait être quelque chose de simple. Un point de repère clair et précis. Vous ne savez pas lequel des bâtiments de cette ferme renferme la porcherie, pour le moment. Et vous avez toujours faim. Pourquoi ne pas prendre l'arrière de la maison du fermier? La bicoque semble vieille mais est reconnaissable parmi les différents bâtiments composant les lieux et est un bon point de repère après tout.
+        Vous pointez le bâtiment du doigt, et désignez votre destination, c'est à dire, la maison du fermier. Vous utilisez les indications de la bête, avec l'ajout des symboles "=" avant son nom.
+        
+        * * *[Vous vous faites entraîner dans cette mer d'encre, tiré par une force inconnue]->Collision_Panneau
+    
+    
+            = Collision_Panneau
+            
+            BONK!
+            
+            Vous vous retrouvez à terre, complètement sonné. Après avoir repris vos esprits et vous être relevé, vous voyez un grand panneau face à vous, avec écrit en grand: <b>"Interdit aux téléporteurs, Bêtes de la Forêt, étrangers et vendeurs au porte à porte!"</b> Le message semble avoir été écrit avec une certaine hostilité et haine envers cette population précise. Vous n'êtes pas blessé, mais votre fierté a pris un sacré coup.
+            Techniquement vous ne vous êtes pas trompé, mais ce panneau semble vous avoir arrêté net dans votre téléportation vers la maison, qui semble néanmoins plus proche. Au moins êtes vous arrivé en bas de la falaise, et vous avez même été capable d'utiliser la téléportation dont la Bête semble user et abuser.
+            
+            Plus qu'à trouver un moyen de rentrer dans la ferme...
+            
+            ->Devant_la_Ferme
+    
+    === Descente_Falaise_Marche
+
+    Vous préférez être prudent. La Bête est une entité dont vous ne comprenez ni le fonctionnement, ni la logique. Quitte à prendre un peu de temps pour descendre, vous préférez le faire d'une manière logique et prudente. De plus, Elle peut vous déjà vous transporter d'un endroit à un autre si cela lui chante.
+
+    * * [Continuer]->Descente_Standard_Meet
+    
+    
+        == Descente_Standard_Meet
+            
+            D'une manière ou d'une autre, vous avez atteint votre destination. Vous êtes en bas de la falaise et intact. En regardant aux alentours, vous voyez un énorme panneau où est écrit en rouge: <b>"Interdit aux téléporteurs, Bêtes de la Forêt, étrangers et vendeurs au porte à porte!"</b> Au moins le propriétaire des lieux est direct quand à son point de vue concernant les visiteurs... Et vous, vous êtes un futur voleur... Déjà que l'idée ne vous enchantait guère avant...
+            
+        ->Devant_la_Ferme
+
+
+===== Devant_la_Ferme
+
+Vous êtes devant la ferme. Le fermier ne vous a pas encore vu. Vous devez voler cet animal, après tout la Bête vous a demandé Snowball et pas un autre cochon,  même si vous savez pertinnemment que cet acte est moralement et légalement puni.
+
+* [Lever votre lanterne]->Observation_Nerf
+* [Détourner l'attention du fermier en causant le chaos dans sa ferme]->Route_Pieges
+
+
+    ==== Observation_Nerf
+    
+    Le panneau que vous avez vu en arrivant vous semble assez étrange. En observant les alentours avec votre Lanterne, vous voyez une étrange magie, un texte de différentes couleurs qui semblent protéger les terres du fermier. Vous soupirez. Malgré les connaissances que vous a transmis la Bête, il sera impossible de vous téléporter directement à destination... Vous ne pourrez malheureusement qu'observer avec la Lanterne.
+    
+    ->Devant_la_Ferme
+
+    ==== Route_Pieges
+    
+    Vous voyez clairement que les terres du fermier sont piégées, que ce soit des pièges passifs comme des carillons ou fils tendus qui alertent le fermier au moindre intrus, que des pièges plus aggressifs, comme des collets voire même des pièges à loup! Cet homme est définitivement dangereux et ne plaisante pas avec sa sécurité et celle de son bétail. 
+    Ces pièges, si vous vous les prenez en vous enfuyant avec Snowball, vous feront échouer dans votre tâche. Et pas seulement. Vous risquez de mourir de manière peu agréable, que ce soit directement à cause de ces pièges ou de la colère du fermier. Et pas de téléportation tant que vous êtes dans l'enceinte de la ferme.
+    
+    Pour le moment, vous aller créer un léger chaos et activer les alarmes en dernier, afin de rester discret dans votre entreprise.
+    
+    *[Vous décidez d'activer les pièges à loup présents autour des bâtiments.]->PiegeALoup
+    *[Vous décidez de détruire les collets disséminés autour des enclos.]->Collets
+    
+    
+        === PiegeALoup
+        
+        Les pièges à loup sont définitivement les choses les plus dangereuses qui se trouvent dans cet endroit. Quiconque en active un se retrouve à hurler comme un... Cochon que l'on égorge. Vous avez entendu les mésaventures de certaines personnes qui par inadvertence s'étaient presque fait trancher le pied par ces vicieuses mâchoires métalliques. 
+        Vous vous armez de pierres pour simplement forcer les pièges à s'activer, se refermant sur du vide avec un claquement métallique qui vous fait tout de même froid dans le dos. Quelle personne saine d'esprit sème des pièges comme il sème des graines de citrouille? Vous avez l'impression qu'il en a semé tous les deux mètres, comme un cultivateur méticuleux...
+        
+        Après une marche prudente qui vous semble avoir duré une éternité, vous finissez par tomber sur des mâchoires déjà fermées. La boucle est bouclée et vous avez sûrement réussi à activer tous les pièges.
+        Vous jetez un oeil autour de vous. Les pièges à loup fermés ne sont clairement pas suffisants pour attirer l'attention du fermier. Il vous faut un évènement particulier, qui frappe fort!
+        
+        Vous apercevez les trappes d'un poulailler et un silo de grain non loin. Libérer le contenu de ces deux endroits devrait causer un sacré chaos! De plus, vous n'aurez aucune inquiétude quand au fait que l'homme se blesse, étant donné que vous avez fermé tous ses pièges.
+        
+        * *[Ouvrir les trappes du poulailler]->PiegeALoup_Poulailler
+        * *[Ouvrir la trappe du silo et laisser une partie de la récolte se déverser]->PiegeALoup_Silo
+        
+        == PiegeALoup_Poulailler
+        
+        Vous vous dirigez sans trop de craintes vers le poulailler, maintenant que vous savez que la voie est libre. Pas de piège qui pourrait vous attraper la cheville et vous faire échouer dans votre plan. Libérer les poules ne ferait rien de mal, juste causer du désagrément aux autres habitants de l'endroit, humains comme animaux. 
+        Vous déverrouillez les trappes et laissez une horde de volailles s'échapper. En un instant, les alentours se retrouvent envahis par des poules, apparemment heureuses de prendre l'air et se dégourdir les jambes. Le caquètement des dizaines de gallinacés est néanmoins fort et insupportable... C'est une bonne diversion.
+        
+        Il ne vous reste plus qu'une chose à faire maintenant.
+        
+        * * *[Activer les alarmes]->Carillons_Piege
+        
+        == PiegeALoup_Silo
+        
+        Le silo est un peu éloigné de la maison principale et de la plupart des bâtiments de la ferme. Vous vous dirigez rapidement vers celui-ci, enjambant les quelques mâchoires fermées des pièges auparavant activés. Heureusement que vous avez fait attention en faisant votre premier tour!
+        En arrivant devant votre cible, vous vous rendez compte de la grande taille de ce silo. Cette chose doit facilement pouvoir contenir des centaines, non, des tonnes de grain ou quoique ce soit que ce fermier cultive. Vous n'avez pas vraiment vu de champs depuis la falaise, plus concentré sur le bétail et les bâtiments qu'autre chose. 
+        La trappe en bas du silo s'ouvre facilement et sous le poids de la récolte, le grain se déversant à terre tel une rivière dorée.
+        
+        Il ne vous reste plus qu'une chose à faire maintenant.
+        
+        * * *[Activer les alarmes]->Carillons_Piege
+
+
+        === Collets
+        
+        Tout en faisant attention aux pièges à loup aux alentours, vous brisez ou fermez tous les collets. Les pièges à loup sont plus visibles que ces derniers et vous ne souhaitez pas vous prendre les pieds dans l'un de ces pièges bien moins visibles. De plus, votre chute pourrait finir sur un piège un loup... Et vous n'avez étrangement pas envie de faire ce genre d'expérience. Si le fermier se met à vous pourchasser, au moins pourra t-il voir et éviter ces vicieuses mâchoires métalliques.
+        Une fois votre tâche accomplie, votre regard se tourne vers le poulailler et le silo. Quel élément crééra le plus de chaos possible, afin d'occuper le fermier?
+        
+        * * *[Ouvrir les trappes du poulailler]->Poulailler_Collet
+        * * *[Ouvrir la trappe du silo pour vider la récolte]->Silo_Collet
+        
+            ==Poulailler_Collet
+            
+            Vous vous dirigez sans trop de craintes vers le poulailler, maintenant que vous savez que la voie est libre. Pas de piège qui pourrait vous attraper la cheville et vous faire échouer dans votre plan. Libérer les poules ne ferait rien de mal, juste causer du désagrément aux autres habitants de l'endroit, humains comme animaux. Elles sont assez intelligentes pour éviter les pièges.
+            Vous déverrouillez les trappes et laissez une horde de volailles s'échapper. En un instant, les alentours se retrouvent envahis par des poules, apparemment heureuses de prendre l'air et se dégourdir les jambes. Le caquètement des dizaines de gallinacés est néanmoins fort et insupportable... C'est une bonne diversion.
+        
+            Il ne vous reste plus qu'une chose à faire maintenant.
+            
+            ->Carillons_Collet
+            
+            
+            ==Silo_Collet
+            
+            Le silo est un peu éloigné de la maison principale et de la plupart des bâtiments de la ferme. Vous vous dirigez rapidement vers celui-ci, contournant les quelques pièges à loup disposés ici et là. Mais le silo est clairement moins protégé que les bâtiments.
+            En arrivant devant votre cible, vous vous rendez compte de la grande taille de ce silo. Cette chose doit facilement pouvoir contenir des centaines, non, des tonnes de grain ou quoique ce soit que ce fermier cultive. Vous n'avez pas vraiment vu de champs depuis la falaise, plus concentré sur le bétail et les bâtiments qu'autre chose. 
+            La trappe en bas du silo s'ouvre facilement et sous le poids de la récolte, le grain se déversant à terre tel une rivière dorée.
+        
+            Il ne vous reste plus qu'une chose à faire maintenant.
+        
+
+            ->Carillons_Collet
+            
+                ==Carillons_Collet
+                
+                Maintenant que la ferme est assez en désordre, vous vous dirigez vers les différents arrangements de clochettes, boîtes de conserves et bouteilles de verre suspendues afin de servir d'alarmes. Vous rapprochez des bâtiments, trouvez une bonne cachette et regardez le désordre causé. Vous êtes le principal responsable de celui-ci, mais ce n'est rien de grave comparé au futur vol de cochon...
+                Vous jetez votre premier caillou sur un arrangement de boîtes de conserves vides, suspendues par un fil. Le bruit est assez fort, mais ce n'est pas encore une totale cacophonie comme vous le souhaitez.
+                Vous vous mettez à mitrailler les différentes alarmes, jusqu'à ce que vous entendiez les cris énervés du fermier, qui débarque d'un coup, écarlate et fusil à la main. Son faciès a la même couleur qu'une tomate bien mûre et il hurle en voyant ses pièges hors d'usage et le désordre régnant dans son domaine.
+                
+                * * * *[Vérifier que le fermier s'occupe bien de son domaine avant d'explorer les bâtiments aux alentours.]->Chaos_Total_Collet
+                
+                
+                ==Carillons_Piege
+                
+                Maintenant que la ferme est assez en désordre, vous vous dirigez vers les différents arrangements de clochettes, boîtes de conserves et bouteilles de verre suspendues afin de servir d'alarmes. Vous rapprochez des bâtiments, trouvez une bonne cachette et regardez le désordre causé. Vous êtes le principal responsable de celui-ci, mais ce n'est rien de grave comparé au futur vol de cochon...
+                Vous jetez votre premier caillou sur un arrangement de boîtes de conserves vides, suspendues par un fil. Le bruit est assez fort, mais ce n'est pas encore une totale cacophonie comme vous le souhaitez.
+                Vous vous mettez à mitrailler les différentes alarmes, jusqu'à ce que vous entendiez les cris énervés du fermier, qui débarque d'un coup, écarlate et fusil à la main. Son faciès a la même couleur qu'une tomate bien mûre et il hurle en voyant ses pièges hors d'usage et le désordre régnant dans son domaine.
+                
+                * * * *[Vérifier que le fermier s'occupe bien de son domaine avant d'explorer les bâtiments aux alentours.]->Chaos_Total_Loup
+        
+    ==== Chaos_Total_Collet
+    
+    Le fermier voit les pièges à loup toujours ouverts et se met à les enjamber, non sans difficulté à cause de son empressement. Il se met à crier des jurons qui feraient rougir un marin et se sépare de son fusil afin de pouvoir se déplacer plus facilement dans ce chaos que vous avez causé.
+    Il va sûrement en avoir pour un sacré moment. Assez pour que vous puissiez voler ce fameux Snowball, malgré le fait que l'acte ne vous plaise guère...
+    
+    *[Continuer]->Test_Saucisse
+    
+    ==== Chaos_Total_Loup
+    
+    Le fermier voit les pièges à loup fermés et se met à les enjamber, mais dans son empressement en oublie ses collets et se retrouve par terre, le pied pris dans l'un de ses propres pièges. Il hurle un flot de jurons qui feraient rougir un marin, si un marin se tenait dans le coin, évidemment.
+    Il va sûrement en avoir pour un sacré moment à régler ces problèmes que vous avez causé. Assez pour que vous puissiez voler ce fameux Snowball, malgré le fait que l'acte ne vous plaise guère...
+    
+    ->Test_Saucisse
+            
+            
+
+->Test_Saucisse
 
 
 ===Test_Saucisse
-Ceci est un test.
+Saucisse.
 ->DONE
     -> END
