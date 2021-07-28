@@ -16,20 +16,20 @@ Deux jours que vous errez dans cette forêt.
 
 Normalement, la Bête se présente à ceux qui la cherchent.
 
-Celle-ci refuse t-elle de se présenter à vous?
+Celle-ci refuse-t-elle de se présenter à vous?
 
 Ou bien n'est-ce qu'un conte de grand-mère, fait pour effrayer les enfants?
 
 Non, impossible.
 
-Les témoignages sont trop nombreux.
+Les indices et rumeurs sont trop nombreux.
 
 *[Continuer]->Debut2
 
 ==Debut2
-Vous tendez l'oreille, cherchant la rivière. Vous savez que si vous la remontez, vous pourrez retrouver le chemin du village. Plutôt rentrer bredouille et abandonner maintenant plutôt que de mourir dévoré par une quelconque créature. Cette forêt est vaste après tout. Et vous ne voulez pas savoir de quoi la Bête se nourrit. 
+Vous tendez l'oreille, cherchant la rivière. Vous savez que si vous la remontez, vous pourrez retrouver le chemin du village. Plutôt rentrer bredouille et abandonner maintenant plutôt que de mourir dévoré par un des autres prédateurs qui hantent les bois. Cette forêt est vaste après tout. Elle abrite trop de crocs à nourrir et ceux de la Bête ne sont sans doute pas les seuls qu'on doit craindre. 
 
-Après plusieurs dizaines de minutes de marche, vous apercevez enfin la rivière. Vous vous hâtez, la fatigue semblant s'évaporer. Enfin, vous pouvez vous désaltérer et vous reposer un instant. Vous êtes en territoire plus ou moins familier. 
+Après plusieurs dizaines de minutes de marche, vous apercevez enfin la rivière. Cette vision vous redonne courage, estompe la fatigue et maintenant vous vous hâtez. Enfin, vous pouvez vous désaltérer et vous reposer un instant, dans un territoire plus ou moins familier. 
 Lorsque vous levez les yeux, vous voyez qu'il fait nuit noire. Les étoiles et la Lune sont absentes au rendez-vous... Vous êtes fatigué. Peut être pourriez vous faire un sieste, ou vous allonger un instant et contempler les raisons qui vous poussent à rechercher cette chose.
 
 *[Continuer]->Debut3
@@ -37,17 +37,19 @@ Lorsque vous levez les yeux, vous voyez qu'il fait nuit noire. Les étoiles et l
 ==Debut3
 <i>"Vous avez l'air perdu. Est-ce que vous allez bien?"
 
-La voix vous sort de votre contemplation, et vous vous retournez en sursautant. Vous voyez une forme drapée d'ombres, qui vous fixe de ses yeux lumineux. Beaucoup trop d'yeux à votre goût. Ce n'est que maintenant qu'elle se manifeste? Sûrement pour profiter de vous plus facilement. Après tout, vous êtes épuisé par cette recherche.
+La voix vous sort de votre contemplation, et vous vous retournez en sursautant. Vous voyez une forme drapée d'ombres, qui vous fixe de ses yeux lumineux. Beaucoup trop d'yeux à votre goût. Ce n'est que maintenant qu'Elle se manifeste ? Sûrement pour profiter de vous plus facilement. Après tout, vous êtes épuisé physiquement et moralement plein d'incertitudes. Il ne faut rien laisser paraître à la vicieuse créature que le sort malheureux vous force à rencontrer.
 
-*"Ce n'est que maintenant que vous vous manifestez?" 
+*"Ce n'est que maintenant que vous vous manifestez ?" 
 ->Rencontre1
 
 
 ===Rencontre1
 
-L'expression de la Bête ne semble pas changer. Même ses yeux, le seul élément légèrement normal de son corps, ne semblent pas bouger, continuant de vous fixer. 
+L'expression de la Bête ne semble pas changer. Ses yeux fixes ne trahissent aucune réaction, ni amusée, ni surprise, à votre provocation... Il va sans dire que c'est la pire des réactions possibles : celle d'un prédateur froid. 
 
-<i>"Vous me cherchiez, et je vous ai trouvé. Mais je sais que vous ne me cherchez pas réellement moi, mais vous savez que je peux vous apporter ce que vous recherchez."
+<i>"Vous me cherchiez et je vous ai trouvé. 
+<i>Je sais que vous ne me cherchiez pas réellement, mais que vous cherchez ce que seule moi peut vous apporter.
+<i> Racontez moi votre histoire..."
 
 *[Refuser de donner des informations à la Bête] ->Rencontre1_A
 
@@ -55,19 +57,21 @@ L'expression de la Bête ne semble pas changer. Même ses yeux, le seul élémen
     
     "Si vous savez ce que je recherche, apportez le moi."
     
-    Votre voix tremble légèrement. Toutefois vous ne voulez pas montrer de faiblesse face à la Bête. Vous savez ce qui vous attend. Et vous voulez en finir rapidement. Plus vite vous ferez les basses besognes qu'elle vous demandera de faire, plus vite vous pourrez repartir d'ici avec ce que vous étiez venu chercher au départ.
+    Votre voix tremble légèrement. Toutefois vous ne voulez pas montrer de faiblesse face à la Bête. Vous savez ce qui vous attend et vous voulez en finir rapidement. Plus vite vous ferez les basses besognes qu'elle vous demandera de faire, plus vite vous pourrez repartir d'ici avec ce que vous étiez venu chercher au départ.
     
-    <i>"Je suppose que vous savez ce que cela implique, n'est ce pas? De vous mettre à mon service en guise de paiement..."
+    <i>"Je suppose que vous savez ce que cela implique, n'est ce pas ? De vous mettre à mon service en guise de paiement..."
     
         *[Accepter]->Rencontre1_A_Suite
     
     ==Rencontre1_A_Suite
-    Vous acquiescez lentement. Les yeux de la Bête semblent... Sourire? Cette image n'est pas des plus rassurantes. Vous voyez un... bras couvert d'ombres sortir de cette masse. Au bout des griffes, pend une lanterne. Elle vous la tend.
+    Vous acquiescez lentement. Les yeux de la Bête semblent... sourire ? Cette image n'est pas des plus rassurantes. Vous voyez un... bras couvert d'ombres sortir de cette masse. Au bout des griffes, pend une lanterne. Elle vous la tend.
+    <i>"Prends cette Lanterne. Elle te permettra de ne pas te perdre tant que tu seras à mon service... Eclaire donc les alentours, tu comprendras."
+    
     *[Prendre la Lanterne]
     
-<i>"Prends cette Lanterne. Elle te permettra de ne pas te perdre tant que tu seras à mon service... Eclaire donc les alentours, tu comprendras."
 
-    Non sans hésiter, vous prenez la lanterne. Elle est lourde et sombre, la poignée est encore froide mais la flamme est allumée. Les alentours semblent d'un coup plus clairs et moins effrayants. ->Lantern_Choices
+
+    Non sans hésiter, vous prenez la lanterne. Elle est lourde et sombre, la poignée en est presque glaciale alors que la flamme spectrale est allumée. Pourtant, la lumière qu'elle émet a quelque chose de rassurant, comme un phare dans la nuit.  ->Lantern_Choices
     
     ==Lantern_Choices
     
@@ -80,9 +84,9 @@ L'expression de la Bête ne semble pas changer. Même ses yeux, le seul élémen
     
     Merci beaucoup de jouer à notre jeu!
     
-    Réalisation par:
-    Pierre Cardascia
-    Luana Tran Nguyen
+    <b>Réalisation par:
+    <b>Pierre Cardascia
+    <b>Luana Tran Nguyen
 
     Vous couvrez la lanterne et l'éloignez de la Bête. Vous avez satisfait votre curiosité.
     ->LanterneEnvirons
@@ -91,7 +95,8 @@ L'expression de la Bête ne semble pas changer. Même ses yeux, le seul élémen
     
     =LanterneEnvirons
     
-    Vous vous éloignez de la Bête, qui reste où elle est, vous observant avec ses dizaine d'yeux. Vous pointez la lanterne vers les arbres et la rivière. Soudain, la forêt semble se tordre et la lumière révèle des phrases et des mots qui s'enlacent et forment les arbres, le sol et tout ce qui vous entoure.
+    Vous vous éloignez de la Bête, qui reste où elle est, vous observant avec ses dizaine d'yeux.
+    Vous pointez la lanterne vers les arbres et la rivière. Soudain, la forêt semble se tordre et la lumière révèle des phrases et des mots qui s'enlacent et forment les arbres, le sol et tout ce qui vous entoure.
     <i>"Cette lanterne révèle les fondations de cette forêt. Qu'en penses tu?"
     //corriger la phrase au-dessus
     *[Lever la lanterne]->Lanterne_FirstUse
@@ -100,8 +105,8 @@ L'expression de la Bête ne semble pas changer. Même ses yeux, le seul élémen
     //micro cinématique sans UI qui montre la forêt sous un autre point de vue.
     //remettre l'UI une fois la cinématique finie
     (Version Texte Inky)
-    Vous vous éloignez de la Bête, qui reste où elle est, vous observant avec ses dizaine d'yeux. Vous pointez la lanterne vers les arbres et la rivière. Soudain, la forêt semble se tordre et la lumière révèle des phrases et des mots qui s'enlacent et forment les arbres, le sol et tout ce qui vous entoure.
-    <i>"Cette lanterne révèle les fondations de cette forêt. Qu'en penses tu?"
+    <pre>Vous vous éloignez de la Bête, qui reste où elle est, vous observant avec ses dizaine d'yeux. Vous pointez la lanterne vers les arbres et la rivière. Soudain, la forêt semble se tordre et la lumière révèle des phrases et des mots qui s'enlacent et forment les arbres, le sol et tout ce qui vous entoure.
+    <pre><i>"Cette lanterne révèle les fondations de cette forêt. Qu'en penses tu?"
     *[Baisser la Lanterne]
     
     La forêt semble de nouveau normale. La Bête pointe une griffe vers la zone que vous avez éclairé et vous chuchote à l'oreille. 
@@ -113,7 +118,7 @@ L'expression de la Bête ne semble pas changer. Même ses yeux, le seul élémen
     La Bête ne dit rien pendant un instant, puis vous l'entendez reculer.
     <i>"Avance un peu, jusqu'à ce que tu trouves un endroit qui te semble impossible à traverser. Observe un peu les environs, histoire de te familiariser avec la Lanterne... Et tente de me retrouver."
     
-    Elle disparaît subitement dans les ombres, vous laissant seul. Ses paroles cryptiques sont bien énervantes, et vous pensez qu'elle n'est qu'un genre de prédateur ne faisant que s'amuser avec sa proie, avant de la dévorer. 
+    Elle disparaît subitement dans les ombres, vous laissant seul. Ses paroles cryptiques sont bien énervantes et vous pensez qu'elle n'est qu'un genre de prédateur ne faisant que s'amuser avec sa proie, avant de la dévorer. 
     ->Deplacement_FirstUses
 
 ->DONE
@@ -122,14 +127,14 @@ L'expression de la Bête ne semble pas changer. Même ses yeux, le seul élémen
 *[Continuer]->Deplacement_FirstUses_Begin
 
 ===Deplacement_FirstUses_Begin
-Voilà que vous progressez dans la forêt, le territoire de la Bête, maintenant à sa recherche. Sans elle, impossible d'obtenir ce pour quoi vous êtes venu la voir. Même si elle vous poussera probablement à faire des choses horribles pour elle. 
-Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt ne fut pas aisé. Certaines portions de l'endroit semblaient disparaître subitement, vous laissant face à des murs de brume impénétrables...
+Voilà que vous progressez dans la forêt, le territoire de la Bête, maintenant à sa recherche. Sans Elle, impossible d'obtenir ce pour quoi vous êtes venu la voir. Même si elle vous poussera probablement à faire des choses horribles pour elle. 
+Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt ne fut pas aisé. Certains sentiers et certains arbres semblaient disparaître subitement, vous laissant face à des murs de brume impénétrables...
 *[Lever la Lanterne]
 
     //==Lantern_Raise_First
     (Texte version inky: Display knot name and syntax + Direct name and syntax)
-    Voilà que vous progressez dans la forêt, le territoire de la Bête, maintenant à sa recherche. Sans elle, impossible d'obtenir ce pour quoi vous êtes venu la voir. Même si elle vous poussera probablement à faire des choses horribles pour elle. 
-Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt ne fut pas aisé. Certaines portions de l'endroit semblaient disparaître subitement, vous laissant face à des murs de brume impénétrables... ->Done_FirstUses_LanternChoice1
+   <pre> Voilà que vous progressez dans la forêt, le territoire de la Bête, maintenant à sa recherche. Sans elle, impossible d'obtenir ce pour quoi vous êtes venu la voir. Même si elle vous poussera probablement à faire des choses horribles pour elle. 
+<pre> Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt ne fut pas aisé. Certaines portions de l'endroit semblaient disparaître subitement, vous laissant face à des murs de brume impénétrables... ->Done_FirstUses_LanternChoice1
 
     ===Done_FirstUses_LanternChoice1    
 *[Baisser la Lanterne]->Done_FirstUses_BeforeLantern
@@ -148,7 +153,7 @@ Alors que vous avancez, vous vous rappelez que votre chemin à travers la forêt
     
     ===FirstUse_Done
     (Texte inky)
-    A travers les mots, vous arrivez à apercevoir des symboles étranges. Ils ne constituent pas de mots, mais pourtant sont là. D'une certaine manière, ils font partie de la forêt. 
+    <pre>A travers les mots, vous arrivez à apercevoir des symboles étranges. Ils ne constituent pas de mots, mais pourtant sont là. D'une certaine manière, ils font partie de la forêt. 
     *[Baisser la Lanterne]
     
     //Texte Inky
@@ -183,9 +188,9 @@ Vous continuez à avancer, cependant avec plus de questions que de réponses, la
 ====First_Knot_Use
 
 Au bout de quelques minutes, vous voyez les ombres bouger devant vous. La Bête est là et vous regarde. Elle semble amusée.
-<i>"Je vois que tu as jeté un oeil aux alentours avec la Lanterne. Alors, as tu vu des choses intéressantes?"
+<i>"Je vois que tu as jeté un oeil aux alentours avec la Lanterne. Alors, as-tu vu des choses intéressantes?"
 
-Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'elle a un fort contrôle sur cette forêt. Elle a probablement utilisé un raccourci dont elle a le secret...
+Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'Elle a un fort contrôle sur cette forêt. Elle a probablement utilisé un raccourci dont Elle a le secret...
 *"Que sont ces symboles "=" avant certains morceaux de texte?" ->Tuto_destination
 *"Que sont ces symboles "- >" à la fin des morceaux de texte?" ->Tuto_direction
 
@@ -197,7 +202,7 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'elle a un fort cont
     ==Destination_Tuto
         (Sous Texte Inky)
         //(===First_Jump)
-    <i>"As tu remarqué que ces symboles sont toujours au début des sections que tu inspectes? Ce sont les... Destinations. Ajouter un ou plusieurs "=" avant une ligne lui donne un nom et crée un nouvel endroit où te rendre."
+    <pre><i>"As tu remarqué que ces symboles sont toujours au début des sections que tu inspectes? Ce sont les... Destinations. Ajouter un ou plusieurs "=" avant une ligne lui donne un nom et crée un nouvel endroit où te rendre."
     
     *"Qu'est-ce que ces "- >" à la fin des morceaux de texte?" ->Tuto_direction_if_destination
     
@@ -236,13 +241,13 @@ Vous n'avez pas vu la Bête se déplacer. Mais vous savez qu'elle a un fort cont
     
     ====Conclusion_Gen
     
-    La Bête met sa "main" sur la votre, vous faisant baisser la Lanterne. Ses griffes sont longues, et sa "peau" est visqueuse, un peu comme de l'encre en train de sécher. Elle inscrit les symboles dans l'air, suivis de plusieurs mots. Et d'un coup, vous vous retrouvez en haut d'une falaise, au-dessus d'un village encore endormi.
+    La Bête met sa "main" sur la vôtre, vous faisant baisser la Lanterne. Ses griffes sont longues, et sa "peau" est visqueuse, un peu comme de l'encre en train de sécher. Elle inscrit les symboles dans l'air, suivis de plusieurs mots. Et d'un coup, vous vous retrouvez en haut d'une falaise, au-dessus d'un village encore endormi.
     
     <i>"Voici ce que tu peux faire en utilisant ces symboles et tes mots. Tu en auras besoin pour la première tâche que je vais te confier."
     
     *[Acquiescer]
     
-    <i>"Rapporte moi Snowball, le cochon de foire. Fais comme tu veux, mais rapporte moi ce cochon."
+    <i>"Rapporte moi Snowball, le cochon de foire. Il commence à être bien gras et j'ai des ... projets pour lui. Fais comme tu veux, mais rapporte moi ce cochon."
     
     La Bête cesse enfin de vous toucher et recule. Puis, avant de disparaître dans les ombres, elle vous dit ces derniers mots:
     
